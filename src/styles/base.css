@@ -1,0 +1,59 @@
+html {
+  background: var(--bg-0);
+}
+
+body {
+  margin: 0;
+  min-width: 1200px;
+  background:
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.08), transparent 28%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-0));
+  color: var(--text-base);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--text-strong);
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.28);
+  color: var(--text-strong);
+}
+
+.devui-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
